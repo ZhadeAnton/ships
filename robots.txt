@@ -1,0 +1,6 @@
+User-agent: *
+User-agent: 
+Disallow: 
+User-agent: *
+Host: https://na-meteore.ru/
+Sitemap: http://https://na-meteore.ru//sitemap.xml

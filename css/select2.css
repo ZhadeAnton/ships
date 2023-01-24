@@ -1,0 +1,79 @@
+
+/*.select2-container--default .select2-results__option[aria-selected="true"] {
+    background: black;
+    color: #fff;
+}*/
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: #B5234D;
+    color: #fff;
+}
+
+/**
+ * Выбор направления в инлайн-форме
+ */
+#main-route-block .select2-selection__rendered {
+    padding-left: 20px;
+}
+
+#main-route-block .select2-selection__arrow {
+    display: none;
+}
+
+@media screen and (min-width: 10px) {
+    #main-route-block .select2-container--open .select2-dropdown {
+        font-size: 16px;
+        /*top: 10px;*/
+        padding: 16px 0 14px;
+        border-width: 0;
+    }
+
+    #main-route-block .select2-results__option {
+        padding: 6px 20px;
+    }
+}
+
+/**
+ * Выбор времени
+ */
+.time-select-block .select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0 15px;
+}
+
+.time-select-block .select2-container .select2-selection--single, .time-select-block .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 42px;
+}
+
+.time-select-block .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 42px;
+}
+
+.time-select-block .select2-selection {
+    background: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #B5234D;
+    /*padding: 0*/
+}
+
+.time-select-block .select2-results__option {
+    /*background: #f5f5f5;*/
+    color: #000;
+}
+
+.time-select-block .select2-dropdown--below {
+    background: #f5f5f5;
+}
+
+/*.time-select-dropdown */
+
+@media screen and (min-width: 10px) {
+    .time-select-block .select2-container--open .select2-dropdown {
+        font-weight: 500;
+        border: 1px solid #B5234D;
+        border-top-width: 0;
+    }
+
+    .time-select-block .select2-results__option {
+        padding: 8px 15px;
+    }
+}
