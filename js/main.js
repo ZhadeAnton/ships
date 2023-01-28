@@ -55,6 +55,27 @@
   }
 
   new Swiper(
+    ".swiper",
+    ((_Swiper = {
+      navigation: {
+        nextEl: ".swiper-btn",
+      },
+      slidesPerView: 1,
+      speed: 1500,
+      centeredSlides: true,
+    }),
+    _defineProperty(_Swiper, "centeredSlides", true),
+    _defineProperty(_Swiper, "spaceBetween", 20),
+    _defineProperty(_Swiper, "loop", true),
+    _defineProperty(_Swiper, "breakpoints", {
+      701: {
+        slidesPerView: 3,
+      },
+    }),
+    _Swiper)
+  );
+
+  new Swiper(
     ".swiper-projects",
     ((_Swiper = {
       slidesPerView: 1,

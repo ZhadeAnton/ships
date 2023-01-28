@@ -3100,7 +3100,7 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 450px;
+  min-height: 470px;
 }
 
 .footer__social {
@@ -3109,6 +3109,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 
 .footer__info-number {
@@ -3117,6 +3118,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 2.1;
 }
 
 .footer__img {
