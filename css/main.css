@@ -779,7 +779,7 @@ a {
 }
 
 .header__logo img {
-  max-width: 60%;
+  width: 200px;
 }
 
 .header__wrapper {
@@ -826,9 +826,17 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: flex-end;
 }
 .header__contacts-number {
   margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  flex-direction: column;
+  gap: 4px;
 }
 .header__contacts-number a {
   display: block;
@@ -836,6 +844,7 @@ a {
   font-size: 16px;
   line-height: 135%;
   color: #ffffff;
+  margin: 0;
 }
 .header__contacts-ticket a {
   font-weight: 500;
@@ -3650,6 +3659,9 @@ textarea::placeholder {
   }
 }
 @media (max-width: 1103px) {
+  .header__logo img {
+    width: 180px;
+  }
   .attention-text {
     font-size: 16px;
   }
@@ -4627,7 +4639,7 @@ textarea::placeholder {
 }
 @media (max-width: 451px) {
   .header__logo {
-    width: 161px;
+    width: 141px;
   }
 }
 @media (max-width: 450px) {
@@ -4742,14 +4754,6 @@ textarea::placeholder {
   .modal__feedback-content {
     background: #b5234d;
     padding: 38px;
-  }
-}
-@media (max-width: 382px) {
-  .header__logo {
-    max-width: 38%;
-  }
-  .header__logo img {
-    max-width: 76%;
   }
 }
 @media (max-width: 362px) {
@@ -5476,14 +5480,16 @@ header .owl-stage-outer {
   overflow: hidden;
 }
 .projects-title-wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin-bottom: 52px;
-  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+  margin-top: 80px;
 }
 .projects-title {
-  grid-column: 2/12;
-  grid-row: 1/2;
+  padding: 0;
+  margin: 0;
+  line-height: 52px;
   font-size: 48px;
   font-weight: 500;
   color: #962344;
@@ -5532,14 +5538,14 @@ header .owl-stage-outer {
   .container {
     padding: 0 60px;
   }
-  .projects-title-wrapper {
-    margin-bottom: 36px;
-  }
   .projects-title {
     font-size: 36px;
   }
 }
 @media (max-width: 1000px) {
+  .projects-title-wrapper {
+    margin-top: 40px;
+  }
   .projects {
     height: 540px;
   }
@@ -5656,4 +5662,12 @@ img {
 }
 a {
   color: #000000;
+}
+.project-slide a {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+.project-slide img {
+  border-radius: 0px;
 }

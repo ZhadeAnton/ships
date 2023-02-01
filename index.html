@@ -139,31 +139,36 @@
         </div>
         <div class="container">
           <div class="header__wrapper">
-            <div class="header__logo">
-              <a href="https://riverport.spb.ru/">
-                <!-- <picture class="logo-desktop">
-              <source srcset="./img/header-logo-red.avif" type="image/avif">
-              <source srcset="./img/header-logo-red.webp" type="image/webp">
-            </picture> -->
-                <!-- <picture class="logo-mobile">
-              <source srcset="./img/header-logo-red.avif" type="image/avif">
-              <source srcset="./img/header-logo-red.webp" type="image/webp">
-              <img class="logo-desktop" loading="lazy" src="img/header-logo-red.png" class="image" alt="">
-            </picture> -->
-                <img loading="lazy" src="img/header-logo-red.png" class="image" alt="" />
-              </a>
-            </div>
-            <a href="index.html">
-              <div class="header__nav">
-                <a href="pass.html" class="header__nav-link">Пассажирам</a>
+            <div>
+              <div class="header__logo">
+                <a href="https://riverport.spb.ru/">
+                  <!-- <picture class="logo-desktop">
+                <source srcset="./img/header-logo-red.avif" type="image/avif">
+                <source srcset="./img/header-logo-red.webp" type="image/webp">
+              </picture> -->
+                  <!-- <picture class="logo-mobile">
+                <source srcset="./img/header-logo-red.avif" type="image/avif">
+                <source srcset="./img/header-logo-red.webp" type="image/webp">
+                <img class="logo-desktop" loading="lazy" src="img/header-logo-red.png" class="image" alt="">
+              </picture> -->
+                  <img
+                    loading="lazy"
+                    src="img/header-logo-red.png"
+                    class="image"
+                    alt=""
+                  />
+                </a>
               </div>
-            </a>
+            </div>
+            <div class="header__nav">
+              <a href="pass.html" class="header__nav-link">Пассажирам</a>
+            </div>
             <div class="header__contacts">
               <div class="header__contacts-number">
                 <a href="tel:+78123351717">+7 812 335-17-17</a>
                 <a href="mailto:meteor@riverport.spb.ru">meteor@riverport.spb.ru</a>
               </div>
-              <div class="header__contacts-ticket">
+              <!-- <div class="header__contacts-ticket">
                 <div class="btn-header">
                   <a
                     class="contacts-btn"
@@ -174,7 +179,7 @@
                     >Купить билет</a
                   >
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -1389,7 +1394,7 @@
                       острова, Биржевой мост и другие знаковые места. За пределами
                       акватории Санкт-Петербурга нас ждут город-порт Кронштадт,
                       <span class="no-wrap">музей-заповедник</span> «Стрельна»
-                      и удивительные виды Петергофа воды.
+                      и удивительные виды Петергофа с воды.
                     </p>
                   </div>
                 </div>
@@ -1926,8 +1931,10 @@
         </div>
       </section> -->
 
-      <div class="projects-title-wrapper">
-        <p class="projects-title">Наши проекты</p>
+      <div class="container">
+        <div class="projects-title-wrapper">
+          <p class="projects-title">Наши проекты</p>
+        </div>
       </div>
 
       <div class="projects">
@@ -1937,56 +1944,15 @@
               class="swiper-projects swiper-initialized swiper-horizontal swiper-pointer-events"
             >
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div><img src="../../img/project-3.png" alt="project" /></div>
-                  <div class="direction__item-title">
-                    Прогулочный флот - Нижний Новгород
-                  </div>
-                  <p class="direction__item-text">
-                    Увлекательные речные прогулки в Нижнем Новгороде по Волге и Оке.
-                  </p>
-                  <div class="swiper-button-prev1 gallery-button-prev">
-                    <svg
-                      width="60"
-                      height="60"
-                      viewBox="0 0 60 60"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="60"
-                        y="60"
-                        width="60"
-                        height="60"
-                        transform="rotate(-180 60 60)"
-                        fill="#007A88"
-                      ></rect>
-                      <path
-                        d="M23.3333 29.9998L33.3333 24.2263L33.3333 35.7733L23.3333 29.9998Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="swiper-button-next1 gallery-button-next">
-                    <svg
-                      width="60"
-                      height="60"
-                      viewBox="0 0 60 60"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="60" height="60" fill="#007A88"></rect>
-                      <path
-                        d="M36.6665 30.0002L26.6665 35.7737L26.6665 24.2267L36.6665 30.0002Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
+                <div class="swiper-slide project-slide">
                   <div><img src="../../img/project-1.png" alt="project" /></div>
-                  <div class="direction__item-title">ВодоходЪ - Круизы и Путешествия</div>
+                  <a
+                    href="https://vodohod.com/"
+                    target="_blank"
+                    class="direction__item-title"
+                  >
+                    ВодоходЪ - Круизы и Путешествия
+                  </a>
                   <p class="direction__item-text">
                     «ВодоходЪ» организует круизы из Москвы, Санкт-Петербурга, Самары,
                     Нижнего Новгорода и Казани по главным рекам европейской части России и
@@ -2031,13 +1997,17 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide">
-                  <div><img src="../../img/project-2.png" alt="project" /></div>
-                  <div class="direction__item-title">Скоростной Флот — Юг</div>
+                <div class="swiper-slide project-slide">
+                  <div><img src="../../img/project-3.png" alt="project" /></div>
+                  <a
+                    href="https://volga-vodohod.ru/"
+                    target="_blank"
+                    class="direction__item-title"
+                  >
+                    Прогулочный флот - Нижний Новгород
+                  </a>
                   <p class="direction__item-text">
-                    Знакомим гостей городов и горожан с красотами южной природы! «Грифон»
-                    и «Комета» курсируют между Новороссийском, Геленджиком, Сочи, а также
-                    открывают новое направление этого года Сочи — Сухум.
+                    Увлекательные речные прогулки в Нижнем Новгороде по Волге и Оке.
                   </p>
                   <div class="swiper-button-prev1 gallery-button-prev">
                     <svg
@@ -2078,11 +2048,120 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide">
-                  <div><img src="../../img/project-5.png" alt="project" /></div>
-                  <div class="direction__item-title">
-                    Речные прогулки по Енисею на Ecocruiser
+                <div class="swiper-slide project-slide">
+                  <div><img src="../../img/project-2.png" alt="project" /></div>
+                  <a
+                    href="https://vodohod-express.ru/"
+                    target="_blank"
+                    class="direction__item-title"
+                    >Скоростной флот — Юг</a
+                  >
+                  <p class="direction__item-text">
+                    Знакомим гостей городов и горожан с красотами южной природы! «Грифон»
+                    и «Комета» курсируют между Новороссийском, Геленджиком, Сочи, а также
+                    открывают новое направление этого года
+                    <span class="no-wrap">Сочи — Сухум</span>.
+                  </p>
+                  <div class="swiper-button-prev1 gallery-button-prev">
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="60"
+                        y="60"
+                        width="60"
+                        height="60"
+                        transform="rotate(-180 60 60)"
+                        fill="#007A88"
+                      ></rect>
+                      <path
+                        d="M23.3333 29.9998L33.3333 24.2263L33.3333 35.7733L23.3333 29.9998Z"
+                        fill="white"
+                      ></path>
+                    </svg>
                   </div>
+                  <div class="swiper-button-next1 gallery-button-next">
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="60" height="60" fill="#007A88"></rect>
+                      <path
+                        d="M36.6665 30.0002L26.6665 35.7737L26.6665 24.2267L36.6665 30.0002Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="swiper-slide project-slide">
+                  <div><img src="../../img/project-6.png" alt="project" /></div>
+                  <a
+                    href="https://na-meteore.ru/"
+                    target="_blank"
+                    class="direction__item-title"
+                  >
+                    Скоростной флот — Санкт-Петербург
+                  </a>
+                  <p class="direction__item-text">
+                    Скоростные теплоходы на подводных крыльях. От Дворцовой набережной до
+                    ГМЗ «Петергоф» за <span class="no-wrap">35 минут</span>.
+                  </p>
+                  <div class="swiper-button-prev1 gallery-button-prev">
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="60"
+                        y="60"
+                        width="60"
+                        height="60"
+                        transform="rotate(-180 60 60)"
+                        fill="#007A88"
+                      ></rect>
+                      <path
+                        d="M23.3333 29.9998L33.3333 24.2263L33.3333 35.7733L23.3333 29.9998Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next1 gallery-button-next">
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="60" height="60" fill="#007A88"></rect>
+                      <path
+                        d="M36.6665 30.0002L26.6665 35.7737L26.6665 24.2267L36.6665 30.0002Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="swiper-slide project-slide">
+                  <div><img src="../../img/project-5.png" alt="project" /></div>
+                  <a
+                    href="https://ecocruiser-enisei.ru/"
+                    target="_blank"
+                    class="direction__item-title"
+                  >
+                    Речные прогулки по Енисею на Ecocruiser
+                  </a>
                   <p class="direction__item-text">
                     Пассажирский электрокатамаран нового поколения под любое ваше
                     мероприятие.
