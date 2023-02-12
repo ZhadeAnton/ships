@@ -54,6 +54,22 @@
     });
   }
 
+  var tableAccordions = document.querySelectorAll(".table-accordion");
+  var i;
+
+  for (i = 0; i < tableAccordions.length; i++) {
+    tableAccordions[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      panel.classList.toggle("active");
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+
   new Swiper(
     ".swiper",
     ((_Swiper = {
