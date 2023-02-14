@@ -1518,6 +1518,7 @@ input[name="promocode"] {
   line-height: 117%;
   color: #ffffff;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .home__ticket {
@@ -3788,7 +3789,7 @@ textarea::placeholder {
     width: 93%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .cost__wrapper {
     display: none;
   }
@@ -5053,7 +5054,7 @@ textarea::placeholder {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .header__passengers_mobile {
     display: block;
     margin-top: 26px;
@@ -5162,7 +5163,7 @@ header .owl-stage-outer {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .header-slide2-container .header-sub-text-container {
     margin-top: 0;
   }
@@ -5821,18 +5822,6 @@ tbody tr th.sub-category {
 
 .cost-table__accordion {
   display: none;
-}
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
 }
 
 .table-accordion__panel {
