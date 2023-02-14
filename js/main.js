@@ -102,12 +102,12 @@
       prevEl: ".swiper-projects .gallery-button-prev",
     }),
     _defineProperty(_Swiper, "centeredSlides", true),
-    _defineProperty(_Swiper, "initialSlide", 1),
     _defineProperty(_Swiper, "allowTouchMove", true),
     _defineProperty(_Swiper, "spaceBetween", 20),
     _defineProperty(_Swiper, "loop", true),
     _defineProperty(_Swiper, "breakpoints", {
       701: {
+        initialSlide: 1,
         allowTouchMove: false,
         slidesPerView: 3,
       },
