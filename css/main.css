@@ -5902,6 +5902,7 @@ tbody tr td .popover__wrapper {
 }
 
 .cost-table__accordion-content table thead tr th.red-category {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -5909,6 +5910,7 @@ tbody tr td .popover__wrapper {
 }
 
 .cost-table__accordion-content table thead tr th.blue-category {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -5920,6 +5922,10 @@ tbody tr td .popover__wrapper {
   font-style: normal;
   font-size: 16px;
   color: #101010;
+}
+.cost-table__accordion-content table tbody tr td p,
+.cost-table__accordion-content table tbody tr th p {
+  text-align: center;
 }
 
 .cost-table__accordion-content table tbody tr td:first-child {
@@ -6057,4 +6063,9 @@ tbody tr td .popover__wrapper {
   .cost-table__accordion-item p {
     font-size: 13px;
   }
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }
