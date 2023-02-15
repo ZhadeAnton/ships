@@ -5748,6 +5748,7 @@ tbody tr th {
   font-weight: bold;
   color: #101010;
   white-space: nowrap;
+  text-align: right;
 }
 
 .cost-table tbody tr td.sub-category,
@@ -5758,6 +5759,7 @@ tbody tr th.sub-category {
   font-weight: normal;
   color: #101010;
   white-space: inherit;
+  text-align: left;
 }
 
 .cost-table__cell-wrapper {
@@ -5766,7 +5768,8 @@ tbody tr th.sub-category {
 }
 
 .cost-table tbody tr td.sub-category .popover__wrapper {
-  margin-left: 10px;
+  display: flex;
+  margin-left: auto;
 }
 
 .popover__wrapper {
