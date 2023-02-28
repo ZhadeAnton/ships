@@ -5705,7 +5705,7 @@ a {
 }
 
 .cost-table tbody tr th,
-tbody tr td {
+.cost-table tbody tr td {
   width: initial;
   text-align: left;
   padding: 20px;
@@ -5742,7 +5742,7 @@ tbody tr th.blue-category {
 }
 
 .cost-table tbody tr td,
-tbody tr th {
+.cost-table tbody tr th {
   font-style: normal;
   font-size: 20px;
   font-weight: bold;
@@ -5751,8 +5751,13 @@ tbody tr th {
   text-align: right;
 }
 
+.cost-table tbody tr td,
+.cost-table tbody tr th.cost-table__category {
+  text-align: left;
+}
+
 .cost-table tbody tr td.sub-category,
-tbody tr th.sub-category {
+.cost-table tbody tr th.sub-category {
   align-items: center;
   font-style: normal;
   font-size: 16px;
@@ -5767,6 +5772,10 @@ tbody tr th.sub-category {
   align-items: center;
 }
 
+.cost-table__cell-wrapper span:first-of-type {
+  margin-right: 10px;
+}
+
 .cost-table tbody tr td.sub-category .popover__wrapper {
   display: flex;
   margin-left: auto;
@@ -5779,8 +5788,8 @@ tbody tr th.sub-category {
 }
 
 .popover__wrapper img {
-  width: 18px;
-  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .popover__content {
@@ -5890,14 +5899,14 @@ tbody tr th.sub-category {
 }
 
 .cost-table__accordion-content table thead tr th,
-tbody tr td {
+.cost-table__accordion-content tbody tr td {
   width: initial;
   text-align: left;
   padding: 18px;
 }
 
 .cost-table__accordion-content table thead tr th,
-tbody tr td .popover__wrapper {
+.cost-table__accordion-content tbody tr td .popover__wrapper {
   margin-left: 6px;
 }
 
@@ -5959,7 +5968,7 @@ tbody tr td .popover__wrapper {
   }
 
   .cost-table tbody tr th,
-  tbody tr td {
+  .cost-table tbody tr td {
     padding: 16px;
   }
 }
@@ -5970,7 +5979,7 @@ tbody tr td .popover__wrapper {
   }
 
   .cost-table tbody tr td,
-  tbody tr th {
+  .cost-table tbody tr th {
     font-size: 16px;
   }
 }
@@ -5985,19 +5994,19 @@ tbody tr td .popover__wrapper {
   }
 
   .cost-table tbody tr td,
-  tbody tr th {
+  .cost-table tbody tr th {
     font-size: 14px;
   }
 
   .cost-table tbody tr td.sub-category,
-  tbody tr th.sub-category {
+  .cost-table tbody tr th.sub-category {
     font-size: 14px;
   }
 
   .cost-table tbody tr td.red-category,
-  tbody tr th.red-category,
+  .cost-table tbody tr th.red-category,
   .cost-table tbody tr td.blue-category,
-  tbody tr th.blue-category {
+  .cost-table tbody tr th.blue-category {
     font-size: 14px;
   }
 
@@ -6019,7 +6028,7 @@ tbody tr td .popover__wrapper {
 
 @media (max-width: 520px) {
   .cost-table__accordion-content table thead tr th,
-  tbody tr td {
+  .cost-table__accordion-content tbody tr td {
     padding: 16px;
   }
 
@@ -6030,7 +6039,7 @@ tbody tr td .popover__wrapper {
 
 @media (max-width: 420px) {
   .cost-table__accordion-content table thead tr th,
-  tbody tr td {
+  .cost-table__accordion-content tbody tr td {
     padding: 12px;
   }
 
@@ -6046,7 +6055,7 @@ tbody tr td .popover__wrapper {
 
 @media (max-width: 360px) {
   .cost-table__accordion-content table thead tr th,
-  tbody tr td {
+  .cost-table__accordion-content tbody tr td {
     padding: 8px;
   }
 
